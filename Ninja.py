@@ -8,16 +8,19 @@ class Ninja:
         self.pet = pet
         self.treats = treats
         self.pet_food = pet_food
-        
+
+    # walk() - walks the ninja's pet invoking the pet play() method
     def walk(self ):
-        self.pet.play()
+        self.Pet.play()
         return self
 
+    # feed() - feeds the ninja's pet invoking the pet eat() method
     def feed(self):
-        self.pet.eat()
+        self.Pet.eat()
         return self
 
+    # bathe() - cleans the ninja's pet invoking the pet noise() method
     def bathe(self):
-        self.pet.noise()
+        self.Pet.noise()
         return self
     
