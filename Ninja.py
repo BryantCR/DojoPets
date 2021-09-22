@@ -9,12 +9,15 @@ class Ninja:
         self.treats = treats
         self.pet_food = pet_food
         
-    def walk(self, ):
+    def walk(self ):
         self.pet.play()
+        return self
 
-    def feed():
+    def feed(self):
         self.pet.eat()
+        return self
 
-    def bathe():
+    def bathe(self):
         self.pet.noise()
+        return self
     

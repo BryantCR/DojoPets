@@ -10,19 +10,19 @@ class Pet:
 
     def sleep(self, energy):
         self.energy = self.energy + 25
-        print("Before Sleep Method, Your energy is: "self.energy)
+        print(f"Before Sleep Method, Your energy is: {self.energy}")
         return self
 
     def eat(self, energy, health):
         self.energy = self.energy + 5
         self.health = self.health + 10
-        print("Before Eat Method, Your health is: "self.health)
-        print("Before Eat Method, Your energy is: "self.energy)
+        print(f"Before Eat Method, Your health is: {self.health}")
+        print(f"Before Eat Method, Your energy is: {self.energy}")
         return self
 
     def play(self, health):
         self.health = self.health + 10
-        print("Before Play Method, Your health is: "self.health)
+        print(f"Before Play Method, Your health is: {self.health}")
         return self
 
     def noise():
