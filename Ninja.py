@@ -11,7 +11,7 @@ class Ninja:
 
     # walk() - walks the ninja's pet invoking the pet play() method
     def walk(self ):
-        self.Pet.play()
+        self.pet.play()
         return self
 
     # feed() - feeds the ninja's pet invoking the pet eat() method

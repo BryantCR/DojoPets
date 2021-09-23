@@ -37,6 +37,6 @@ class Pet:
             print("Guauuuuuuu")
         elif typePet == "Bird":
             print("Tuituitui")
-        elif typePet == "Fish":
+        elif typePet == "":
             print("Gluglugluglu")
         return self
