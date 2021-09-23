@@ -6,16 +6,16 @@ class Pet:
         self.tricks = tricks
         self.health = 100
         self.energy = 100
-        self.noise = noise
+        self.pnoise = noise
 
     # sleep() - increases the pets energy by 25
-    def sleep(self, energy):
+    def sleep(self):
         self.energy = self.energy + 25
         print(f"Before Sleep Method, Your energy is: {self.energy}")
         return self
 
     # eat() - increases the pet's energy by 5 & health by 10
-    def eat(self, energy, health):
+    def eat(self):
         self.energy = self.energy + 5
         self.health = self.health + 10
         print(f"Before Eat Method, Your health is: {self.health}")
@@ -23,20 +23,12 @@ class Pet:
         return self
 
     # play() - increases the pet's health by 5
-    def play(self, health):
+    def play(self):
         self.health = self.health + 5
         print(f"Before Play Method, Your health is: {self.health}")
         return self
 
     # noise() - prints out the pet's sound
-    def noise(self, noise, typePet):
-        if typePet == "Cat":
-            print("Miauuuuuuu")
-            print(self.noise)
-        elif typePet == "Dog":
-            print("Guauuuuuuu")
-        elif typePet == "Bird":
-            print("Tuituitui")
-        elif typePet == "":
-            print("Gluglugluglu")
+    def noise(self):
+        print(self.pnoise)
         return self
